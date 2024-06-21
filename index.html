@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <div id="left-container"
+      ><h1 class="logo">Company™</h1>
+      <div id="image-placeholder"></div>
+      <div class="footer">
+        <ul>
+          <li><span class="ps-link">About</span></li>
+          <li><span class="ps-link">Privacy Policy</span></li>
+          <li><span class="ps-link">Energy Saving Mode</span></li>
+        </ul>
+      </div>
+    </div>
+    <div id="right-container">
+      <div>Create your Company™ account</div>
+      <form action="#" method="post">
+        <label for="user-first-name">First Name</label>
+        <input
+          type="text"
+          id="user-first-name"
+          name="user-first-name"
+          required
+        />
+
+        <label for="user-last-name">Last Name</label>
+        <input type="text" id="user-last-name" name="user-last-name" required />
+
+        <label for="user-email">Email</label>
+        <input type="email" id="user-email" name="user-email" required />
+
+        <label for="user-tel">Phone Number</label>
+        <input type="tel" id="user-tel" name="user-tel" />
+
+        <label for="user-pwd">Password</label>
+        <input type="password" id="user-pwd" name="user-pwd" required />
+
+        <label for="user-pwd-conf">Confirm Password</label>
+        <input
+          type="password"
+          id="user-pwd-conf"
+          name="user-pwd-conf"
+          required
+        />
+
+        <input type="checkbox" id="subscribe" name="subscribe" checked />
+        <label for="subscribe"
+          >Get emails from Company™ about product updates, offers and industry
+          news. You can <span class="ps-link">Unsubscribe</span> at any
+          time</label
+        >
+
+        <button type="submit">Create Account</button>
+      </form>
+    </div>
+  </body>
+</html>
