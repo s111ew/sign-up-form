@@ -98,7 +98,7 @@ li:not(.bullet):hover {
 }
 
 #intro-text > span {
-    font-size: 17px;
+    font-size: 23px;
     color: var(--logo-colour);
 }
 
@@ -209,7 +209,12 @@ input:not(#subscribe):focus:placeholder-shown + .floating {
 }
 
 #intro-text {
+    font-size: 20px;
     margin-bottom: 50px;
+}
+
+#subscribe-text {
+  line-height: 1.6;
 }
 
 #signIn {
