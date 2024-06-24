@@ -10,13 +10,17 @@
   <body>
     <div id="left-container"
       ><h1 class="logo">Company™</h1>
-      <div id="image-placeholder"></div>
+      <div id="image-placeholder"
+        ><img
+          src="./images/9796599.svg"
+          alt="cartoon image of two people in a library"
+      /></div>
       <ul>
         <li><span class="ps-link">About</span></li>
         <li class="bullet">•</li>
         <li><span class="ps-link">Privacy Policy</span></li>
         <li class="bullet">•</li>
-        <li><span class="ps-link">Energy Saving Mode</span></li>
+        <li><span class="ps-link">Contact</span></li>
       </ul>
     </div>
 
@@ -27,85 +31,93 @@
         >
 
         <form action="#" method="post">
-          <div class="input-container">
-            <div>
-              <label class="visually-hidden" for="user-first-name"
-                >First Name</label
-              >
+          <div class="row-container">
+            <div class="input-container">
               <input
                 type="text"
                 id="user-first-name"
                 name="user-first-name"
-                placeholder="First Name"
+                placeholder=" "
+                data-error="Please enter your first name"
                 required
               />
+              <label class="floating" for="user-first-name">First Name *</label>
             </div>
-            <div
-              ><label class="visually-hidden" for="user-last-name"
-                >Last Name</label
-              >
+            <div class="input-container">
               <input
                 type="text"
                 id="user-last-name"
                 name="user-last-name"
-                placeholder="Last Name"
-                required /></div
-          ></div>
+                placeholder=" "
+                data-error="Please enter your last name"
+                required
+              />
+              <label class="floating" for="user-last-name"
+                >Last Name *</label
+              ></div
+            ></div
+          >
 
-          <div class="input-container"
-            ><div
-              ><label class="visually-hidden" for="user-email">Email</label>
+          <div class="row-container"
+            ><div class="input-container">
               <input
                 type="email"
                 id="user-email"
                 name="user-email"
-                placeholder="Email"
+                placeholder=" "
+                data-error="Please enter a valid email address"
                 required
-            /></div>
+              />
+              <label class="floating" for="user-email">Email *</label></div
+            >
 
-            <div
-              ><label class="visually-hidden" for="user-tel"
-                >Phone Number</label
-              >
-              <input
-                type="tel"
-                id="user-tel"
-                name="user-tel"
-                placeholder="Telephone" /></div
-          ></div>
+            <div class="input-container">
+              <input type="tel" id="user-tel" name="user-tel" placeholder=" " />
+              <label class="floating" for="user-tel">Phone Number</label></div
+            ></div
+          >
 
-          <div class="input-container"
-            ><div
-              ><label class="visually-hidden" for="user-pwd">Password</label>
+          <div class="row-container"
+            ><div class="input-container">
               <input
                 type="password"
                 id="user-pwd"
                 name="user-pwd"
-                placeholder="Password"
-            /></div>
+                placeholder=" "
+                data-error="Please choose a password"
+                required
+              />
+              <label class="floating" for="user-pwd">Password *</label></div
+            >
 
-            <div
-              ><label class="visually-hidden" for="user-pwd-conf"
-                >Confirm Password</label
-              >
+            <div class="input-container">
               <input
                 type="password"
                 id="user-pwd-conf"
                 name="user-pwd-conf"
-                placeholder="Confirm Password"
-                required /></div
-          ></div>
-
-          <div id="checkbox-container"
-            ><input type="checkbox" id="subscribe" name="subscribe" checked />
-            <label for="subscribe"
-              >Get emails from Company™ about product updates, offers and
-              industry news. You can
-              <span id="unsubscribe">Unsubscribe</span> at any time</label
+                placeholder=" "
+                data-error="Please confirm your password"
+                required
+              />
+              <label class="floating" for="user-pwd-conf"
+                >Confirm Password *</label
+              ></div
             ></div
           >
 
-          <div><button type="submit">Create Account</button></div>
+          <div id="checkbox-container"
+            ><input type="checkbox" id="subscribe" name="subscribe" checked />
+            <label id="subscribe-text" for="subscribe"
+              >Get emails from Company™ about product updates, offers and
+              industry news. You can
+              <span class="bodyLink">Unsubscribe</span> at any time</label
+            ></div
+          >
+
+          <button type="submit">Create Account</button>
+          <div id="signIn"
+            >Already have an account?<span class="bodyLink"> Sign in</span></div
+          >
         </form></div
       >
     </div>
